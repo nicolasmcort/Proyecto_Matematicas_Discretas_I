@@ -1,4 +1,5 @@
 <img src="img/bart-simpson-los-simpson.gif" width="300" alt="Bart bailando :D">
+<br>
 
 # Proyecto de Matemáticas Discretas I
 <br>
