@@ -1,6 +1,6 @@
 <img src="img/bart-simpson-los-simpson.gif" width="300" alt="Bart bailando :D">
 <br>
-![bart-simpson-los-simpson](https://github.com/user-attachments/assets/e7fc47f2-2379-4df2-81fd-a770a1ab833a)
+
 
 # Proyecto de Matemáticas Discretas I
 <br>
