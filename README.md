@@ -1,5 +1,4 @@
-<img src="https://media.tenor.com/JoUXoTf0_zAAAAAC/bart-simpson-los-simpson.gif" width="300" alt="Bart bailando :D">
-<br>
+<img src="img/bart-simpson-los-simpson.gif" width="300" alt="Bart bailando :D">
 
 # Proyecto de Matemáticas Discretas I
 <br>
