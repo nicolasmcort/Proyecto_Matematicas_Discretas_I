@@ -93,7 +93,7 @@ Optimizador de Planificación de Tareas con Grafos
 ---
 
 
-## Backend
+## Backend  (PROVISIONAL!!!!!)
 ### Celda 1 del Jupyter Notebook (para models.py)
 ``` python
 class Task:
