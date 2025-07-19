@@ -29,14 +29,14 @@ Docente: Arles Ernesto Rodríguez Portela
 - [1. Objetivos](#1-objetivos)
   - [1.1 Objetivo General](#11-objetivo-general)
   - [1.2 Objetivos Específicos](#12-objetivos-especificos)
-- [2. Principios de Matemáticas Discretas](#principios-de-matematicas-discretas)
-- [3. Estructura del Proyecto](#estructura-del-proyecto)
-- [4. Requisitos de Instalación](#)
-- [5. Ejecución Local](#)
-- [6. Instrucciones de Uso](#)
-- [7. Ejemplo de Uso](#ejemplo-de-uso)
-- [8. Tecnologías Utilizadas](#tecnologías-utilizadas)
-- [9. Conclusiones](#conclusiones)
+- [2. Principios de Matemáticas Discretas](#2-principios-de-matematicas-discretas)
+- [3. Estructura del Proyecto](#3-estructura-del-proyecto)
+- [4. Requisitos de Instalación](#4-requisitos-de-instalación)
+- [5. Ejecución Local](#5-ejecución-local)
+- [6. Instrucciones de Uso](#6-instrucciones-de-uso)
+- [7. Ejemplod de Uso](#7-ejemplos-de-uso)
+- [8. Tecnologías Utilizadas](#8-tecnologías-utilizadas)
+- [9. Conclusiones](#9-conclusiones)
 
 <br><br>
 
@@ -159,18 +159,19 @@ Durante la instalación, asegúrate de que la opción "Add to PATH" esté selecc
 
 - Python (3.11 o superior): Python es un lenguaje de programación que se utiliza para ejecutar el backend (servidor) del proyecto. Puedes descargarlo e instalarlo desde este enlace: https://www.python.org/downloads/.
 Durante la instalación, asegúrate de que la opción "Add Python to PATH" esté seleccionada. Esto permitirá que puedas ejecutar comandos de Python desde la terminal.
+<br><br>
 
 #### Descargar el Código del Proyecto desde GitHub:
 - Abre la línea de comandos (o terminal) y navega al directorio donde quieres guardar el proyecto. 
 
-- Utiliza el siguiente comando, reemplazando "URL_DEL_REPOSITORIO" con la URL real del repositorio de GitHub:
+- Utiliza el siguiente comando con la URL real del repositorio de GitHub:
 ``` bash
-git clone URL_DEL_REPOSITORIO
+git clone https://github.com/nicolasmcort/Proyecto_Matematicas_Discretas_I.git
 ```
 Esto descargará el código del proyecto a una nueva carpeta con el mismo nombre que el repositorio.
+<br><br>
 
-#### Frontend
-##### 1. Instalar Dependencias:
+#### Frontend:
 - Abre una terminal en el directorio `/client` y ejecuta el siguiente comando:
 ``` bash
 npm install
@@ -178,16 +179,14 @@ npm install
 Esto instalará todas las dependencias del frontend especificadas en el archivo `package.json`.
 <br><br>
 
-#### Backend
-##### 1. Crear un Entorno Virtual (Recomendado):
+#### Backend:
 - Crea un entorno virtual para aislar las dependencias del backend. Puedes utilizar `venv` o `virtualenv`.
 ``` bash
 python3 -m venv venv  # Crea el entorno virtual
 venv\Scripts\activate  # Activa el entorno virtual (Windows)
 ```
-Se sugiere utilizar un entorno virtual para evitar conflictos con otras versiones de paquetes instaladas en tu sistema.
+Es recomendable utilizar un entorno virtual para evitar conflictos con otras versiones de paquetes instaladas en tu sistema.
 
-##### 2. Instalar Dependencias:
 - Abre una terminal en el directorio `server/backend` y ejecuta el siguiente comando:
 ``` bash
 pip install -r requirements.txt
@@ -199,24 +198,85 @@ Esto instalará todas las dependencias del backend especificadas en el archivo `
 
 ## 5. Ejecución Local
 
+#### Backend:
+- Abre una terminal en el directorio `server/backend` y ejecuta el siguiente comando:
+``` bash
+uvicorn api:app 
+```
+Uvicorn iniciará el servidor y este permanecerá en funcionamiento hasta que lo detengas manualmente (por ejemplo, con `Ctrl+C` en la terminal). 
+<br><br>
 
+#### Frontend:
+- Abre otra terminal diferente, navega al directorio `/client` y ejecuta el siguiente comando:
+``` bash
+npm run dev
+```
+Esto iniciará el servidor de desarrollo en el puerto 8080 (o algún otro puerto disponible). Podrás acceder a la aplicación en el navegador escribiendo la URL http://localhost:8080, o por medio de la combinación de teclas `o` + `enter` en la terminal.
+<br><br>
+
+#### Nota:
+Asegúrate de que el backend se esté ejecutando antes de intentar acceder a la aplicación en el navegador.
 <br><br>
 
 ---
 
-## 6. instrucciones de Uso
+## 6. Instrucciones de Uso
 
+#### Gestión de Tareas:
+En la página principal, utiliza el formulario para agregar nuevas tareas.
+
+- Define el nombre, la duración, la unidad (Horas/Minutos), la prioridad (Baja, Media, Alta, Crítica) y las dependencias, que corresponden a los IDs de otras tareas de las que esta tarea depende para poder iniciarse, separados por comas.
+- Utiliza la sección "Gestión y Búsqueda" para:
+  - Buscar información de tareas por ID.
+  - Actualizar la información de una tarea existente.
+  - Eliminar una tarea.
+<br><br>
+
+#### Análisis de Ruta Crítica:
+Después de definir las tareas, haz clic en el botón "Generar Plan" en la página principal. Esto te redirigirá a la página de análisis, donde podrás ver:
+- El grafo de dependencias visualizado.
+- La duración total estimada del proyecto.
+- El número de tareas críticas.
+- La posible ruta del proyecto detectada, mostrando la secuencia de tareas.
+- Si existen dependencias cíclicas, se mostrarán en una sección separada.
 <br><br>
 
 ---
 
-## 7. Ejemplo de Uso
+## 7. Ejemplos de Uso
 
-| Tareas       | Importancia  | Dependende de|
-|--------------|:------------:|-------------:|
-| Tarea A      | 6/10         | NULL         |
-| Tarea B      | 8/10         | Tarea C      |
-| Tarea C      | 2/10         | Tarea A      |
+### 7.1 Grafo sin Dependencias Cíclicas
+
+- Tareas y Dependencias:
+| Tareas       | Dependende de|
+|--------------|:------------:|
+| A            | Ninguna      |
+| B            | A            |
+| C            | A            |
+| D            | B            |
+| E            | B, C         |
+| F            | D            |
+| G            | E, F         |
+
+- Ruta Detectada:
+- Grafo de Dependencias:
+  
+### 7.1 Grafo con Dependencias Cíclicas
+
+- Tareas y Dependencias:
+| Tareas       | Dependende de|
+|--------------|:------------:|
+| A            | Ninguna      |
+| B            | A            |
+| C            | A            |
+| D            | B            |
+| E            | B, C         |
+| F            | D            |
+| G            | E, F         |
+
+- Ruta Detectada:
+- Grafo de Dependencias:
+
 <br><br>
 
 ---
