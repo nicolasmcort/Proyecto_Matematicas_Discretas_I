@@ -248,6 +248,7 @@ Después de definir las tareas, haz clic en el botón "Generar Plan" en la pági
 ### 7.1 Grafo sin Dependencias Cíclicas
 
 - Tareas y Dependencias:
+  
 | Tareas       | Dependende de|
 |--------------|:------------:|
 | A            | Ninguna      |
@@ -264,9 +265,10 @@ Después de definir las tareas, haz clic en el botón "Generar Plan" en la pági
 ### 7.1 Grafo con Dependencias Cíclicas
 
 - Tareas y Dependencias:
+  
 | Tareas       | Dependende de|
 |--------------|:------------:|
-| A            | Ninguna      |
+| A            | G            |
 | B            | A            |
 | C            | A            |
 | D            | B            |
