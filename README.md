@@ -35,6 +35,8 @@ Docente: Arles Ernesto Rodríguez Portela
 - [5. Ejecución Local](#5-ejecución-local)
 - [6. Instrucciones de Uso](#6-instrucciones-de-uso)
 - [7. Ejemplod de Uso](#7-ejemplos-de-uso)
+   - [7.1 Grafo sin Dependencias Cíclicas](#71-grafo-sin-dependencias-cíclicas)
+   - [7.2 Grafo con Dependencias Cíclicas](#72-grafo-con-dependencias-cíclicas) 
 - [8. Tecnologías Utilizadas](#8-tecnologías-utilizadas)
 - [9. Conclusiones](#9-conclusiones)
 
@@ -266,7 +268,7 @@ Después de definir las tareas, haz clic en el botón "Generar Plan" en la pági
 <br>
 
   
-### 7.1 Grafo con Dependencias Cíclicas
+### 7.2 Grafo con Dependencias Cíclicas
 
 - Tareas y Dependencias:
   
