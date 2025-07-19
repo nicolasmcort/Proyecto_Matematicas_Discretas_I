@@ -31,14 +31,11 @@ Docente: Arles Ernesto Rodríguez Portela
   - [1.2 Objetivos Específicos](#12-objetivos-especificos)
 - [2. Principios de Matemáticas Discretas](#principios-de-matematicas-discretas)
 - [3. Estructura del Proyecto](#estructura-del-proyecto)
-- [4. Requerimientos](#requerimientos)
-- [5. Instalación y Ejecución](#)
-  - [5.1 Backend](#)
-  - [5.2 Frontend](#)
-  - [5.3 Ejecución Local](#)
-- [6. Uso de la Aplicación](#)
+- [4. Requisitos de Instalación](#)
+- [5. Ejecución Local](#)
+- [6. Instrucciones de Uso](#)
 - [7. Ejemplo de Uso](#ejemplo-de-uso)
-- [8. Tecnologías Utilizadas](#)
+- [8. Tecnologías Utilizadas](#tecnologías-utilizadas)
 - [9. Conclusiones](#conclusiones)
 
 <br><br>
@@ -62,7 +59,7 @@ Desarrollar un sistema para optimizar la planificación de tareas que, a partir 
 
 ---
 
-## Principios de Matematicas Discretas
+## 2. Principios de Matematicas Discretas
 
 - **Relaciones y sus propiedades (Ej. transitividad)**:
 - **Relaciones de orden**:
@@ -73,7 +70,7 @@ Desarrollar un sistema para optimizar la planificación de tareas que, a partir 
 
 ---
 
-## Estructura del Proyecto
+## 3. Estructura del Proyecto
 ``` txt
 C:.
 │   .npmrc                     # Configuración de npm
@@ -152,8 +149,68 @@ C:.
 
 ---
 
+## 4. Requisitos de Instalación
 
-## Ejemplo de Uso
+#### Requisitos Generales:
+- Git (2.25 o superior): Git es un sistema de control de versiones que se utiliza para gestionar el código del proyecto. Puedes descargarlo e instalarlo desde este enlace: https://git-scm.com/downloads.
+
+- Node.js (18 o superior): Node.js es un entorno de ejecución de JavaScript que se utiliza para ejecutar el frontend (interfaz de usuario) del proyecto. Puedes descargarlo e instalarlo desde este enlace: https://nodejs.org/en/download/.
+Durante la instalación, asegúrate de que la opción "Add to PATH" esté seleccionada. Esto permitirá que puedas ejecutar comandos de Node.js desde la terminal.
+
+- Python (3.11 o superior): Python es un lenguaje de programación que se utiliza para ejecutar el backend (servidor) del proyecto. Puedes descargarlo e instalarlo desde este enlace: https://www.python.org/downloads/.
+Durante la instalación, asegúrate de que la opción "Add Python to PATH" esté seleccionada. Esto permitirá que puedas ejecutar comandos de Python desde la terminal.
+
+#### Descargar el Código del Proyecto desde GitHub:
+- Abre la línea de comandos (o terminal) y navega al directorio donde quieres guardar el proyecto. 
+
+- Utiliza el siguiente comando, reemplazando "URL_DEL_REPOSITORIO" con la URL real del repositorio de GitHub:
+``` bash
+git clone URL_DEL_REPOSITORIO
+```
+Esto descargará el código del proyecto a una nueva carpeta con el mismo nombre que el repositorio.
+
+#### Frontend
+##### 1. Instalar Dependencias:
+- Abre una terminal en el directorio `/client` y ejecuta el siguiente comando:
+``` bash
+npm install
+```
+Esto instalará todas las dependencias del frontend especificadas en el archivo `package.json`.
+<br><br>
+
+#### Backend
+##### 1. Crear un Entorno Virtual (Recomendado):
+- Crea un entorno virtual para aislar las dependencias del backend. Puedes utilizar `venv` o `virtualenv`.
+``` bash
+python3 -m venv venv  # Crea el entorno virtual
+venv\Scripts\activate  # Activa el entorno virtual (Windows)
+```
+Se sugiere utilizar un entorno virtual para evitar conflictos con otras versiones de paquetes instaladas en tu sistema.
+
+##### 2. Instalar Dependencias:
+- Abre una terminal en el directorio `server/backend` y ejecuta el siguiente comando:
+``` bash
+pip install -r requirements.txt
+```
+Esto instalará todas las dependencias del backend especificadas en el archivo `requirements.txt`.
+<br><br>
+
+---
+
+## 5. Ejecución Local
+
+
+<br><br>
+
+---
+
+## 6. instrucciones de Uso
+
+<br><br>
+
+---
+
+## 7. Ejemplo de Uso
 
 | Tareas       | Importancia  | Dependende de|
 |--------------|:------------:|-------------:|
@@ -164,7 +221,39 @@ C:.
 
 ---
 
-## Conclusiones
+## 8. Tecnologías Utilizadas
+
+Principales tecnologías, frameworks y librerías utilizadas en el proyecto.
+
+#### Backend
+- Python
+- FastAPI
+- Uvicorn
+- NetworkX
+- Matplotlib
+
+#### Frontend
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- React Router DOM
+- Radix UI
+- Lucide React icons
+
+#### Otros
+- Git
+- VSCode
+- npm
+- pydantic
+- jsdom
+- cytoscape
+- postcss
+<br><br>
+
+---
+
+## 9. Conclusiones
 
 - Acá se idica si se alcanzaron los objetivos 😁😁
 
