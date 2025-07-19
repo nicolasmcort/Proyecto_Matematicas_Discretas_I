@@ -221,7 +221,7 @@ Asegúrate de que el backend se esté ejecutando antes de intentar acceder a la 
 
 ## 6. Instrucciones de Uso
 
-#### Gestión de Tareas:
+#### Panel de Control de Tareas:
 En la página principal, utiliza el formulario para agregar nuevas tareas.
 
 - Define el nombre, la duración, la unidad (Horas/Minutos), la prioridad (Baja, Media, Alta, Crítica) y las dependencias, que corresponden a los IDs de otras tareas de las que esta tarea depende para poder iniciarse, separados por comas.
@@ -230,17 +230,18 @@ En la página principal, utiliza el formulario para agregar nuevas tareas.
 <br>
 
 - Desde la sección 'Gestión y Búsqueda', puedes ejercer control total sobre tus tareas individuales. Simplemente busca por ID para:
-  - Actualizar la información de una tarea existente.
+
+- Actualizar la información de una tarea existente.
 
 <img src="img/Actualización-‐-Hecho-con-Clipchamp.gif" alt="Actualización de Tareas">
 <br>
 
-  - Eliminar una tarea.
+- Eliminar una tarea.
 
 <img src="img/Borrado-‐-Hecho-con-Clipchamp.gif" alt="Borrado de Tareas">
 <br><br>
 
-#### Análisis de Ruta Crítica:
+#### Análisis de Dependencias:
 Después de definir las tareas, haz clic en el botón "Generar Plan" en la página principal. Esto te redirigirá a la página de análisis, donde podrás ver:
 - El grafo de dependencias visualizado.
 - La duración total estimada del proyecto.
