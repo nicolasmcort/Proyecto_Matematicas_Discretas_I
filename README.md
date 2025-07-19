@@ -225,9 +225,19 @@ Asegúrate de que el backend se esté ejecutando antes de intentar acceder a la 
 En la página principal, utiliza el formulario para agregar nuevas tareas.
 
 - Define el nombre, la duración, la unidad (Horas/Minutos), la prioridad (Baja, Media, Alta, Crítica) y las dependencias, que corresponden a los IDs de otras tareas de las que esta tarea depende para poder iniciarse, separados por comas.
+
+<img src="img/Inserción-‐-Hecho-con-Clipchamp.gif" alt="Inserción de Tareas">
+<br>
+
 - Desde la sección 'Gestión y Búsqueda', puedes ejercer control total sobre tus tareas individuales. Simplemente busca por ID para:
   - Actualizar la información de una tarea existente.
+
+<img src="img/Actualización-‐-Hecho-con-Clipchamp.gif" alt="Actualización de Tareas">
+<br>
+
   - Eliminar una tarea.
+
+<img src="img/Borrado-‐-Hecho-con-Clipchamp.gif" alt="Borrado de Tareas">
 <br><br>
 
 #### Análisis de Ruta Crítica:
@@ -237,6 +247,9 @@ Después de definir las tareas, haz clic en el botón "Generar Plan" en la pági
 - El número de tareas críticas.
 - La posible ruta del proyecto detectada, mostrando la secuencia de tareas.
 - Si existen dependencias cíclicas, se mostrarán en una sección separada.
+<br>
+
+<img src="img/Grafo-‐-Hecho-con-Clipchamp.gif" alt="Grafo de Tareas">
 <br><br>
 
 ---
