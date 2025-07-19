@@ -1,7 +1,3 @@
-<img src="https://media.tenor.com/JoUXoTf0_zAAAAAC/bart-simpson-los-simpson.gif" width="300" alt="Bart bailando :D">
-<br>
-
-
 # Proyecto de Matemáticas Discretas I
 <br>
 <img src="https://www.pngkey.com/png/detail/268-2688228_universidad-nacional-colombia-logo.png" width="230" alt="Logo Universidad Nacional de Colombia">
@@ -39,6 +35,7 @@ Docente: Arles Ernesto Rodríguez Portela
    - [7.2 Grafo con Dependencias Cíclicas](#72-grafo-con-dependencias-cíclicas) 
 - [8. Tecnologías Utilizadas](#8-tecnologías-utilizadas)
 - [9. Conclusiones](#9-conclusiones)
+- [10. Referencias](#9-Referencias)
 
 <br><br>
 
@@ -56,7 +53,7 @@ Desarrollar un sistema para optimizar la planificación de tareas que, a partir 
 
 - Diseñar una interfaz gráfica para la interacción con el sistema.
 
-- Generar múltiples secuencias de ejecución de tareas posibles.
+- Aplicar principios de matemáticas discretas y propiedades de grafos para la identificación efectiva de dependencias cíclicas en la planificación de tareas.
 <br><br>
 
 ---
@@ -228,8 +225,7 @@ Asegúrate de que el backend se esté ejecutando antes de intentar acceder a la 
 En la página principal, utiliza el formulario para agregar nuevas tareas.
 
 - Define el nombre, la duración, la unidad (Horas/Minutos), la prioridad (Baja, Media, Alta, Crítica) y las dependencias, que corresponden a los IDs de otras tareas de las que esta tarea depende para poder iniciarse, separados por comas.
-- Utiliza la sección "Gestión y Búsqueda" para:
-  - Buscar información de tareas por ID.
+- Desde la sección 'Gestión y Búsqueda', puedes ejercer control total sobre tus tareas individuales. Simplemente busca por ID para:
   - Actualizar la información de una tarea existente.
   - Eliminar una tarea.
 <br><br>
@@ -325,7 +321,22 @@ Principales tecnologías, frameworks y librerías utilizadas en el proyecto.
 
 ## 9. Conclusiones
 
-- Acá se idica si se alcanzaron los objetivos 😁😁
+- Se implementó satisfactoriamente un algoritmo de búsqueda en profundidad (DFS) que permite la detección robusta de dependencias circulares dentro del grafo de tareas, asegurando la validez de la planificación.
+
+- Se diseñó y desarrolló una interfaz gráfica de usuario intuitiva que facilita la interacción con el sistema, permitiendo a los usuarios definir tareas y visualizar los resultados de la optimización de manera clara y accesible.
+
+- Se aplicaron con éxito principios fundamentales de matemáticas discretas y propiedades inherentes de los grafos para la identificación efectiva de rutas de ejecución y dependencias cíclicas.
+<br><br>
+
+---
+
+## 10. Referencias
+
+// TODO
+
+
+<img src="https://media.tenor.com/JoUXoTf0_zAAAAAC/bart-simpson-los-simpson.gif" width="300" alt="Bart bailando :D">
+<br>
 
 
 
