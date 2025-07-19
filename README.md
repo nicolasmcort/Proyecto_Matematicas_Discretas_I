@@ -29,10 +29,18 @@ Docente: Arles Ernesto Rodríguez Portela
 - [1. Objetivos](#1-objetivos)
   - [1.1 Objetivo General](#11-objetivo-general)
   - [1.2 Objetivos Específicos](#12-objetivos-especificos)
-- [Principios de Matemáticas Discretas](#principios-de-matematicas-discretas)
-- [Estructura del Proyecto](#estructura-del-proyecto)
-- [Ejemplo de Uso](#ejemplo-de-uso)
-- [Conclusiones](#conclusiones)
+- [2. Principios de Matemáticas Discretas](#principios-de-matematicas-discretas)
+- [3. Estructura del Proyecto](#estructura-del-proyecto)
+- [4. Requerimientos](#requerimientos)
+- [5. Instalación y Ejecución](#)
+  - [5.1 Backend](#)
+  - [5.2 Frontend](#)
+  - [5.3 Ejecución Local](#)
+- [6. Uso de la Aplicación](#)
+- [7. Ejemplo de Uso](#ejemplo-de-uso)
+- [8. Tecnologías Utilizadas](#)
+- [9. Conclusiones](#conclusiones)
+
 <br><br>
 
 ---
