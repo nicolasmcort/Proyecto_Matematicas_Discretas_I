@@ -328,6 +328,8 @@ Principales tecnologías, frameworks y librerías utilizadas en el proyecto.
 - jsdom
 - cytoscape
 - postcss
+- Figma
+- Builder.io
 <br><br>
 
 ---
