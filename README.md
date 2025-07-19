@@ -35,7 +35,7 @@ Docente: Arles Ernesto Rodríguez Portela
    - [7.2 Grafo con Dependencias Cíclicas](#72-grafo-con-dependencias-cíclicas) 
 - [8. Tecnologías Utilizadas](#8-tecnologías-utilizadas)
 - [9. Conclusiones](#9-conclusiones)
-- [10. Referencias](#9-Referencias)
+- [10. Referencias](#10-referencias)
 
 <br><br>
 
